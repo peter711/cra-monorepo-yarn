@@ -1,0 +1,21 @@
+{
+  "name": "@monorepo-root/some-library",
+  "version": "1.0.0",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Piotr Falkowski",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  },
+  "scripts": {
+    "build": "rimraf dist & tsc"
+  }
+}

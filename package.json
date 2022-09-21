@@ -1,0 +1,23 @@
+{
+  "name": "@monorepo-root/root",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "url": "https://github.com/peter711/cra-monorepo-yarn"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Falkowski"
+  },
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn workspace @monorepo-root/react-cra start",
+    "build": "yarn workspace @monorepo-root/react-cra build",
+    "test": "yarn workspace @monorepo-root/react-cra test",
+    "build:some-library": "yarn workspace @monorepo-root/some-library build"
+  }
+}
